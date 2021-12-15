@@ -2,7 +2,7 @@ import quai from "../../Assets/Images/quai.png";
 
 export default function ContactForm() {
   return (
-    <div className="relative bg-white" id="contact">
+    <div className="relative bg-blue-50 rounded-t-full" id="contact">
       <div className="lg:absolute lg:inset-0">
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
