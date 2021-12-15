@@ -186,7 +186,7 @@ export default function ContactForm() {
               <div className="text-right sm:col-span-2">
                 <button
                   type="submit"
-                  className="inline-flex justify-center px-4 py-3 border border-transparent text-base font-medium shadow-sm rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+                  className="inline-flex justify-center px-4 py-3 border border-transparent text-base font-medium shadow-sm rounded-md text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
                 >
                   Envoyer
                 </button>

@@ -1,6 +1,6 @@
 import React from 'react'
 import office from "../../Assets/Images/office.jpg";
-import plan from "../../Assets/Images/plan2.jpg";
+import plan from "../../Assets/Images/plan1.jpg";
 import tools from "../../Assets/Images/tools.jpg";
 
 function HoverCards() {

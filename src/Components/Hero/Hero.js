@@ -98,7 +98,7 @@ export default function Hero() {
                     src={saujon}
                     alt="New home"
                   />
-                  <div className="absolute inset-0 bg-blue-300 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-blue-100 mix-blend-multiply" />
                 </div>
                 <div className="relative px-4 pb-12 pt-16 sm:px-6 sm:pt-24 lg:pt-32 lg:px-8">
                   <h1 className="text-left text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">

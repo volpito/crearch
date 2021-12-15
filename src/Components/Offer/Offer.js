@@ -66,7 +66,7 @@ export default function Offer() {
                 <h3 className="text-xl font-medium text-gray-900">{link.name}</h3>
                 <p className="mt-4 text-base text-gray-500">{link.description}</p>
               </div>
-              <div className="p-6 bg-blue-600 rounded-bl-2xl rounded-br-2xl md:px-8">
+              <div className="p-6 bg-blue-500 rounded-bl-2xl rounded-br-2xl md:px-8">
                 <Link to={link.to} className="text-base font-medium text-gray-50 hover:text-gray-200">
                   Contactez-nous<span aria-hidden="true"> &rarr;</span>
                 </Link>
