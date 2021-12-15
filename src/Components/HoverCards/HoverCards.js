@@ -1,33 +1,36 @@
 import React from 'react'
+import office from "../../Assets/Images/office.jpg";
+import plan from "../../Assets/Images/plan2.jpg";
+import tools from "../../Assets/Images/tools.jpg";
 
 function HoverCards() {
 
   const cards = [
     { subtitle: 'Votre projet', 
-      title: 'Appartement',
+      title: 'Maison',
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.kj96dJzRt1t5gjRsd_GPXgHaE8%26pid%3DApi&f=1v',
+      img: tools,
       className:"mr-12"
     },
     { subtitle: 'Votre projet', 
       title: 'Bureau',
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-      img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.officelovin.com%2Fwp-content%2Fuploads%2F2019%2F03%2Fsapphire-office-palo-alto-11.jpg&f=1&nofb=1',
+      img: office,
       className:"mr-12"
       },
     { subtitle: 'Votre projet', 
-      title: 'Maison',
+      title: 'Appartement',
       content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-      img: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.floornature.com%2Fmedia%2Fphotos%2F30%2F15103%2F06_LSD_Architects-Balcony_House_ph-Fernando-Alda_full.jpg&f=1&nofb=1',
+      img: plan,
       className:""
     } 
   ]
 
   return (
-    <div className="bg-yellow-50 pb-20">
+    <div className="bg-yellow-50 pb-20" id="project">
       <div className="max-w-7xl mx-auto sm:py-16 pt-16 px-4 sm:px-6 lg:px-8">
       <h2 className="text-left text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-        <span className="block text-gray-500 sm:ml-40">Quel est votre</span>
+        <span className="block text-gray-700 sm:ml-40">Quel est votre</span>
         <span className="block text-yellow-300 sm:text-center">projet ?</span>
       </h2 >
       </div>

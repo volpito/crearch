@@ -1,27 +1,29 @@
+import quai from "../../Assets/Images/quai.png";
+
 export default function ContactForm() {
   return (
-    <div className="relative bg-white">
+    <div className="relative bg-white" id="contact">
       <div className="lg:absolute lg:inset-0">
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
-            className="h-56 w-full object-cover lg:absolute lg:h-full"
-            src="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80"
-            alt=""
+            className="h-56 w-full object-contain object-center lg:absolute lg:h-full lg:block hidden"
+            src={quai}
+            alt="computer-drawn plan"
           />
         </div>
       </div>
       <div className="relative py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
         <div className="lg:pr-8">
           <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
-            <h2 className="text-4xl font-extrabold tracking-tight sm:text-4xl text-yellow-300">Let's work together</h2>
+            <h2 className="text-4xl font-extrabold tracking-tight sm:text-4xl text-yellow-300">Contactez-nous </h2>
             <p className="mt-4 text-lg text-gray-500 sm:mt-3">
-              We’d love to hear from you! Send us a message using the form opposite, or email us. We’d love to hear from
-              you! Send us a message using the form opposite, or email us.
+            Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui
+            laoreet diam sed lacus, fames. Dui, amet, nec sit pulvinar.
             </p>
             <form action="#" method="POST" className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
               <div>
                 <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
-                  First name
+                  Prénom
                 </label>
                 <div className="mt-1">
                   <input
@@ -35,7 +37,7 @@ export default function ContactForm() {
               </div>
               <div>
                 <label htmlFor="last-name" className="block text-sm font-medium text-gray-700">
-                  Last name
+                  Nom
                 </label>
                 <div className="mt-1">
                   <input
@@ -63,7 +65,7 @@ export default function ContactForm() {
               </div>
               <div className="sm:col-span-2">
                 <label htmlFor="company" className="block text-sm font-medium text-gray-700">
-                  Company
+                  Enreprise
                 </label>
                 <div className="mt-1">
                   <input
@@ -78,10 +80,10 @@ export default function ContactForm() {
               <div className="sm:col-span-2">
                 <div className="flex justify-between">
                   <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                    Phone
+                    Téléphone
                   </label>
                   <span id="phone-description" className="text-sm text-gray-500">
-                    Optional
+                    Optionnel
                   </span>
                 </div>
                 <div className="mt-1">
@@ -98,10 +100,10 @@ export default function ContactForm() {
               <div className="sm:col-span-2">
                 <div className="flex justify-between">
                   <label htmlFor="how-can-we-help" className="block text-sm font-medium text-gray-700">
-                    How can we help you?
+                    Quel est votre demande ?
                   </label>
                   <span id="how-can-we-help-description" className="text-sm text-gray-500">
-                    Max. 500 characters
+                    Max. 500 caractères
                   </span>
                 </div>
                 <div className="mt-1">
@@ -116,7 +118,7 @@ export default function ContactForm() {
                 </div>
               </div>
               <fieldset className="sm:col-span-2">
-                <legend className="block text-sm font-medium text-gray-700">Expected budget</legend>
+                <legend className="block text-sm font-medium text-gray-700">Votre budget</legend>
                 <div className="mt-4 grid grid-cols-1 gap-y-4">
                   <div className="flex items-center">
                     <input
@@ -127,7 +129,7 @@ export default function ContactForm() {
                       className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
                     />
                     <label htmlFor="budget-under-25k" className="ml-3">
-                      <span className="block text-sm text-gray-700">Less than $25K</span>
+                      <span className="block text-sm text-gray-700">Moins de 25M€</span>
                     </label>
                   </div>
                   <div className="flex items-center">
@@ -139,7 +141,7 @@ export default function ContactForm() {
                       className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
                     />
                     <label htmlFor="budget-25k-50k" className="ml-3">
-                      <span className="block text-sm text-gray-700">$25K – $50K</span>
+                      <span className="block text-sm text-gray-700">25M€ – 50M€</span>
                     </label>
                   </div>
                   <div className="flex items-center">
@@ -151,7 +153,7 @@ export default function ContactForm() {
                       className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
                     />
                     <label htmlFor="budget-50k-100k" className="ml-3">
-                      <span className="block text-sm text-gray-700">$50K – $100K</span>
+                      <span className="block text-sm text-gray-700">50M€ – 100M€</span>
                     </label>
                   </div>
                   <div className="flex items-center">
@@ -163,14 +165,14 @@ export default function ContactForm() {
                       className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
                     />
                     <label htmlFor="budget-over-100k" className="ml-3">
-                      <span className="block text-sm text-gray-700">$100K+</span>
+                      <span className="block text-sm text-gray-700">Plus de 100M€</span>
                     </label>
                   </div>
                 </div>
               </fieldset>
               <div className="sm:col-span-2">
                 <label htmlFor="how-did-you-hear-about-us" className="block text-sm font-medium text-gray-700">
-                  How did you hear about us?
+                  Comment nous avez-vous connus ?
                 </label>
                 <div className="mt-1">
                   <input
@@ -184,9 +186,9 @@ export default function ContactForm() {
               <div className="text-right sm:col-span-2">
                 <button
                   type="submit"
-                  className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                  className="inline-flex justify-center px-4 py-3 border border-transparent text-base font-medium shadow-sm rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
                 >
-                  Submit
+                  Envoyer
                 </button>
               </div>
             </form>

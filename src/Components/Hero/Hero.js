@@ -4,18 +4,20 @@ import {
   MenuIcon,
   XIcon,
 } from '@heroicons/react/outline'
+import { HashLink as Link } from 'react-router-hash-link';
 
 import crearch from "../../Assets/Images/crearch.png";
+import saujon from "../../Assets/Images/saujon1.jpg";
 
 const navigation = [
-  { name: 'Pricing', href: '#' },
-  { name: 'Partners', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'Votre projet', to: '#project' },
+  { name: "L'offre", to: '#offer' },
+  { name: 'Contact', to: '#contact' },
 ]
 
 export default function Hero() {
   return (
-    <div className="bg-white">
+    <div className="bg-white" id="hero">
       <header>
 
         {/*top menu*/}
@@ -31,9 +33,9 @@ export default function Hero() {
             </div>
             <Popover.Group as="nav" className="hidden md:flex space-x-10">              
               {navigation.map((item) => (
-                <a key={item.name} href={item.href} className="text-base font-medium text-gray-500 hover:text-gray-900">
+                <Link key={item.name} to={item.to} className="text-base font-medium text-gray-500 hover:text-gray-900">
                   {item.name}
-                </a>
+                </Link>
               ))}
             </Popover.Group>            
           </div>
@@ -93,15 +95,15 @@ export default function Hero() {
                 <div className="absolute inset-0">
                   <img
                     className="h-full w-full object-cover"
-                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fliveblogspot.com%2Fwp-content%2Fuploads%2F2017%2F11%2Freal.jpg&f=1&nofb=1"
+                    src={saujon}
                     alt="New home"
                   />
-                  <div className="absolute inset-0 bg-blue-300 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-blue-400 mix-blend-multiply" />
                 </div>
                 <div className="relative px-4 pb-12 pt-16 sm:px-6 sm:pt-24 lg:pt-32 lg:px-8">
                   <h1 className="text-left text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                    <span className="block text-white">Prenez le contrôle</span>
-                    <span className="block text-yellow-300">de votre immobilier</span>
+                    <span className="block text-white">Faites-vous conseiller</span>
+                    <span className="block text-yellow-300">sur votre immobilier</span>
                   </h1>
                   <p className="mt-12 max-w-lg text-left text-xl text-white sm:max-w-3xl">
                     Achat particulier, ou vente professionnelle : 
@@ -111,18 +113,18 @@ export default function Hero() {
                   </p>
                   <div className="mt-32 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-around ">
                     <div className="space-y-4 sm:space-y-0 sm:inline-grid sm:grid-cols-2 sm:gap-96">
-                      <a
-                        href="#"
-                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-yellow-700 bg-white hover:bg-yellow-50 sm:px-8"
+                      <Link 
+                        to="#offer"
+                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-gray-700 bg-white hover:bg-yellow-50 sm:px-8"
                       >
-                        Découvrez l'offre
-                      </a>
-                      <a
-                        href="#"
+                        Découvrez l'Offre
+                      </Link>
+                      <Link 
+                        to="#contact"
                         className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-yellow-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"
                       >
                         Contactez-nous
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -131,7 +133,7 @@ export default function Hero() {
           </div>
 
           {/* Logo cloud */}
-          <div className="bg-yellow-50 ">
+          <div className="relative bg-yellow-50 z-50">
             <div className="max-w-7xl mx-auto pt-16 sm:py-16 px-4 sm:px-6 lg:px-8">
               <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
                 Trusted by over 5 very average small businesses

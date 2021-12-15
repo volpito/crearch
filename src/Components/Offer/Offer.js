@@ -1,24 +1,25 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { NewspaperIcon, PhoneIcon, SupportIcon } from '@heroicons/react/outline'
+import { HashLink as Link } from 'react-router-hash-link';
 
 const supportLinks = [
   {
     name: 'Analyse',
-    href: '#',
+    to: '#contact',
     description:
       'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
     icon: PhoneIcon,
   },
   {
     name: 'Dialogue',
-    href: '#',
+    to: '#contact',
     description:
       'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
     icon: SupportIcon,
   },
   {
     name: `En quête d'idées ?`,
-    href: '#',
+    to: '#contact',
     description:
       'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
     icon: NewspaperIcon,
@@ -27,14 +28,14 @@ const supportLinks = [
 
 export default function Offer() {
   return (
-    <div className="bg-white">
+    <div className="bg-white" id="offer">
       {/* Header */}
       <div className="relative pb-32 bg-gray-800">
         <div className="absolute inset-0">
           <img
             className="w-full h-full object-cover"
             src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&&sat=-100"
-            alt=""
+            alt="work-group brainstorming together"
           />
           <div className="absolute inset-0 bg-gray-800 mix-blend-multiply" aria-hidden="true" />
         </div>
@@ -59,16 +60,16 @@ export default function Offer() {
           {supportLinks.map((link) => (
             <div key={link.name} className="flex flex-col bg-white rounded-2xl shadow-xl">
               <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
-                <div className="absolute top-0 p-5 inline-block bg-blue-600 rounded-xl shadow-lg transform -translate-y-1/2">
-                  <link.icon className="h-6 w-6 text-white" aria-hidden="true" />
+                <div className="absolute top-0 p-5 inline-block bg-white rounded-xl shadow-lg transform -translate-y-1/2">
+                  <link.icon className="h-6 w-6 text-yellow-400" aria-hidden="true" />
                 </div>
                 <h3 className="text-xl font-medium text-gray-900">{link.name}</h3>
                 <p className="mt-4 text-base text-gray-500">{link.description}</p>
               </div>
-              <div className="p-6 bg-gray-50 rounded-bl-2xl rounded-br-2xl md:px-8">
-                <a href={link.href} className="text-base font-medium text-blue-700 hover:text-indigo-600">
+              <div className="p-6 bg-blue-600 rounded-bl-2xl rounded-br-2xl md:px-8">
+                <Link to={link.to} className="text-base font-medium text-gray-50 hover:text-gray-200">
                   Contactez-nous<span aria-hidden="true"> &rarr;</span>
-                </a>
+                </Link>
               </div>
             </div>
           ))}
