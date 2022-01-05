@@ -102,15 +102,17 @@ export default function Hero() {
                 </div>
                 <div className="relative px-4 pb-12 pt-16 sm:px-6 sm:pt-24 lg:pt-32 lg:px-8">
                   <h1 className="text-left text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-                    <span className="block text-white">Faites-vous conseiller</span>
-                    <span className="block text-yellow-300">sur votre immobilier</span>
+                    <span className="block text-white">Faites vous conseiller sur  </span>
+                    <span className="block text-yellow-300"> vos choix immobiliers ! </span>
                   </h1>
-                  <p className="mt-12 max-w-lg text-left text-xl text-white sm:max-w-3xl">
-                    Achat particulier, ou vente professionnelle : 
+                  <div className='max-w-sm'>
+                  <p className="mt-12 text-left text-xl text-white sm:max-w-3xl">
+                    Achat, vente et transformations, entre particuliers ou professionnels...
                   </p>
-                  <p className="max-w-lg text-left text-xl text-white sm:max-w-3xl">
-                    nos solutions de conseil s'adaptent à vos besoins.
+                  <p className="text-left text-xl text-white sm:max-w-3xl mt-2">
+                    Découvrez des solutions éclairées qui s'adaptent à vos besoins. 
                   </p>
+                  </div>
                   <div className="mt-32 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-around ">
                     <div className="space-y-4 sm:space-y-0 sm:inline-grid sm:grid-cols-2 sm:gap-96">
                       <Link 
@@ -132,46 +134,16 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Logo cloud */}
           <div className="relative bg-yellow-50 z-50">
             <div className="max-w-7xl mx-auto pt-16 sm:py-16 px-4 sm:px-6 lg:px-8">
-              <p className="text-center text-sm font-semibold uppercase text-gray-500 tracking-wide">
-                Trusted by over 5 very average small businesses
+              <p className="text-center text-6xl font-extrabold uppercase text-blue-400 tracking-wide">
+                CREARCH' CONSEIL
               </p>
-              <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
-                </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img className="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
-                </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                  <img
-                    className="w-32 rounded-2xl"
-                    src={crearch}
-                    alt="StaticKit"
-                  />
-                </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                    alt="Transistor"
-                  />
-                </div>
-                <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-                    alt="Workcation"
-                  />
-                </div>
-              </div>
+              <hr className='mx-auto pt-1 mt-2 w-2/12 border-2 bg-blue-400 border-blue-400'/>
             </div>
           </div>
+          
         </div>
-
-        {/* More main page content here... */}
       </main>
     </div>
   )

@@ -1,27 +1,27 @@
 import React from 'react'
 import office from "../../Assets/Images/office.jpg";
-import plan from "../../Assets/Images/plan1.jpg";
+import flat from "../../Assets/Images/flat.jpg";
 import tools from "../../Assets/Images/tools.jpg";
 
 function HoverCards() {
 
   const cards = [
     { subtitle: 'Votre projet', 
-      title: 'Maison',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      img: tools,
+      title: 'Appartement',
+      content: "Dans le cadre d'un projet de location, ou pour vous y installer durablement, l'acquisition d'un appartement et son aménagement répond à des problématiques bien spécifiques",
+      img: flat,
       className:"mr-12"
     },
     { subtitle: 'Votre projet', 
-      title: 'Bureau',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+      title: 'Bureaux - commerces',
+      content: "Des normes d'accès à l'optimisation de l'espace, la création ou la rénovation d'un espace de travail est un challenge à part entière qui mérite un conseil adapté.",
       img: office,
       className:"mr-12"
       },
     { subtitle: 'Votre projet', 
-      title: 'Appartement',
-      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-      img: plan,
+      title: 'Maison',
+      content: "Pour avoir une vraie vision d'ensemble sur votre bâtisse, comptez sur les conseils de notre architecte DPLG qui vous accompagnera tout au long du processus.",
+      img: tools,
       className:""
     } 
   ]
@@ -30,15 +30,15 @@ function HoverCards() {
     <div className="bg-yellow-50 pb-20" id="project">
       <div className="max-w-7xl mx-auto sm:py-16 pt-16 px-4 sm:px-6 lg:px-8">
       <h2 className="text-left text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-        <span className="block text-gray-700 sm:ml-40">Quel est votre</span>
-        <span className="block text-yellow-300 sm:text-center">projet ?</span>
+        <span className="block text-gray-700 sm:ml-20">Notre approche</span>
+        <span className="block text-yellow-300 sm:ml-60">pour vos projets</span>
       </h2 >
       </div>
       <section className="text-gray-600 body-font hidden sm:block">
-        <div className="grid-cols-3 sm:grid-cols-2 max-w-6xl flex mx-auto">
+        <div className="grid-cols-3 sm:grid-cols-2 max-w-7xl flex mx-auto">
           {cards.map((item) => (
             <div key={item.title} className={item.className}>
-                <div className="flex relative">
+                <div className="flex relative ">
                   <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center rounded-xl" src={item.img}/>
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-yellow-200 bg-white opacity-0 hover:opacity-100 rounded-xl">
                     <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">{item.subtitle}</h2>
@@ -61,7 +61,7 @@ function HoverCards() {
             >
                 <li key={cards[0].title}>
                   <div className="space-y-2 mx-auto grid grid-cols-2">
-                      <img className={`rounded-3xl mx-auto h-44 object-cover shadow-2xl`} src={cards[0].img} alt={cards[0].title} />
+                      <img className={`rounded-3xl mt-7 mx-auto h-44 object-cover shadow-2xl`} src={cards[0].img} alt={cards[0].title} />
                       <div className="space-y-2">
                         <div className="text-sm font-medium lg:text-sm">
                           <h3 className="text-blue-600 mb-2 text-lg">{cards[0].title}</h3>
@@ -78,12 +78,14 @@ function HoverCards() {
                       <p className="text-gray-600 px-2">{cards[1].content}</p>
                     </div>
                   </div>
-                  <img className={`rounded-3xl mx-auto h-44 object-cover shadow-xl`} src={cards[1].img} alt={cards[1].title} />
+                  <div>
+                  <img className={`rounded-3xl mx-auto h-44 object-cover shadow-xl mt-7`} src={cards[1].img} alt={cards[1].title} />
+                  </div>
                 </div>
               </li>
               <li key={cards[2].title}>
                 <div className="space-y-4 mx-auto grid grid-cols-2">
-                  <img className={`rounded-3xl bg-gray-200 mx-auto h-44 object-cover shadow-2xl`} src={cards[2].img} alt={cards[2].title} />
+                  <img className={`rounded-3xl bg-gray-200 mx-auto h-44 object-cover shadow-2xl mt-7`} src={cards[2].img} alt={cards[2].title} />
                   <div className="space-y-2">
                     <div className="text-sm font-medium lg:text-sm">
                       <h3 className="text-blue-600 mb-2 text-lg">{cards[2].title}</h3>

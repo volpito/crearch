@@ -7,22 +7,22 @@ const supportLinks = [
     name: 'Analyse',
     to: '#contact',
     description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: PhoneIcon,
+      'Tous les aspects de votre projet seront analysés en détail, afin de vous éviter les déconvenues une fois l’affaire engagée.',
+    icon: NewspaperIcon,
   },
   {
     name: 'Dialogue',
     to: '#contact',
     description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: SupportIcon,
+      'Vos attentes concernant le projet seront exprimées sans détours afin d’éviter tout regret lors de sa réalisation.', 
+    icon: PhoneIcon,
   },
   {
-    name: `En quête d'idées ?`,
+    name: `Des idées en plus`,
     to: '#contact',
     description:
-      'Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui laoreet diam sed lacus, fames.',
-    icon: NewspaperIcon,
+      'L’aménagement, la transformation ou l’appropriation du lieu seront autant d’occasion de stimuler notre imagination au service de votre projet.',
+    icon: SupportIcon,
   },
 ]
 
@@ -40,10 +40,10 @@ export default function Offer() {
           <div className="absolute inset-0 bg-gray-800 mix-blend-multiply" aria-hidden="true" />
         </div>
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Notre offre :</h1>
+          <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Notre prestation :</h1>
           <p className="mt-6 max-w-3xl text-xl text-gray-300">
-            Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui
-            laoreet diam sed lacus, fames. Dui, amet, nec sit pulvinar.
+            Nous sommes là pour regarder, vous écouter et vous accompagner dans ce domaine si particulier
+            dont nous connaissons tous les rouages.
           </p>
         </div>
       </div>

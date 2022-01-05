@@ -1,4 +1,5 @@
 import quai from "../../Assets/Images/quai.png";
+import { PhoneIcon, MailIcon } from '@heroicons/react/outline'
 
 export default function ContactForm() {
   return (
@@ -15,10 +16,11 @@ export default function ContactForm() {
       <div className="relative py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
         <div className="lg:pr-8">
           <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
-            <h2 className="text-4xl font-extrabold tracking-tight sm:text-4xl text-yellow-300">Contactez-nous </h2>
-            <p className="mt-4 text-lg text-gray-500 sm:mt-3">
-            Varius facilisi mauris sed sit. Non sed et duis dui leo, vulputate id malesuada non. Cras aliquet purus dui
-            laoreet diam sed lacus, fames. Dui, amet, nec sit pulvinar.
+            <h2 className="text-4xl font-extrabold tracking-tight sm:text-4xl text-yellow-300 uppercase tracking-wide">contact </h2>
+            <p className="mt-4 text-lg text-gray-500 sm:mt-6 sm:space-y-3">
+            <p className="flex text-gray-500"><PhoneIcon className="flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-500" aria-hidden="true"/> 01.**.**.**.** </p>
+            <p className="flex text-gray-500"><MailIcon className="flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-500"/>crearch.conseil@wanadoo.fr</p>
+            <p>ou via le formulaire suivant, et nous prendrons rapidement contact avec vous !</p>
             </p>
             <form action="#" method="POST" className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
               <div>
@@ -117,59 +119,6 @@ export default function ContactForm() {
                   />
                 </div>
               </div>
-              <fieldset className="sm:col-span-2">
-                <legend className="block text-sm font-medium text-gray-700">Votre budget</legend>
-                <div className="mt-4 grid grid-cols-1 gap-y-4">
-                  <div className="flex items-center">
-                    <input
-                      id="budget-under-25k"
-                      name="budget"
-                      defaultValue="under_25k"
-                      type="radio"
-                      className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
-                    />
-                    <label htmlFor="budget-under-25k" className="ml-3">
-                      <span className="block text-sm text-gray-700">Moins de 25M€</span>
-                    </label>
-                  </div>
-                  <div className="flex items-center">
-                    <input
-                      id="budget-25k-50k"
-                      name="budget"
-                      defaultValue="25k-50k"
-                      type="radio"
-                      className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
-                    />
-                    <label htmlFor="budget-25k-50k" className="ml-3">
-                      <span className="block text-sm text-gray-700">25M€ – 50M€</span>
-                    </label>
-                  </div>
-                  <div className="flex items-center">
-                    <input
-                      id="budget-50k-100k"
-                      name="budget"
-                      defaultValue="50k-100k"
-                      type="radio"
-                      className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
-                    />
-                    <label htmlFor="budget-50k-100k" className="ml-3">
-                      <span className="block text-sm text-gray-700">50M€ – 100M€</span>
-                    </label>
-                  </div>
-                  <div className="flex items-center">
-                    <input
-                      id="budget-over-100k"
-                      name="budget"
-                      defaultValue="over_100k"
-                      type="radio"
-                      className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
-                    />
-                    <label htmlFor="budget-over-100k" className="ml-3">
-                      <span className="block text-sm text-gray-700">Plus de 100M€</span>
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
               <div className="sm:col-span-2">
                 <label htmlFor="how-did-you-hear-about-us" className="block text-sm font-medium text-gray-700">
                   Comment nous avez-vous connus ?

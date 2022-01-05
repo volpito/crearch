@@ -9,6 +9,7 @@ import CTA from './Components/CTA/CTA';
 import Offer from './Components/Offer/Offer';
 import ContactForm from './Components/ContactForm/ContactForm';
 import BtnReturn from './Components/BtnReturn/BtnReturn';
+import Pricing from './Components/Pricing/Pricing';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <CTA id="cta"/>
       <HoverCards id="project"/>
       <Offer id="offer"/>
+      <Pricing />
       <ContactForm id="contact"/>
     </>
   )
