@@ -4,7 +4,7 @@ export default function CTA() {
   return (
     <>
     <div className="bg-yellow-50 hidden sm:block">
-      <div className="bg-blue-400 max-w-6xl mx-auto">
+      <div className="bg-blue-500 max-w-6xl mx-auto">
         <div className="max-w-5xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-extrabold text-white sm:text-5xl">
             <span className="block">L'expertise d'une <span className="text-yellow-300">architecte DPLG</span></span>

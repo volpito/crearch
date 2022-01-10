@@ -70,7 +70,7 @@ function HoverCards() {
                       </div>
                     </div>
                   </li>
-                <li key={cards[1].title} /*style={{backgroundImage: `url(${cards[1].img})`}} className="bg-fixed bg-center bg-blue-400"*/>
+                <li key={cards[1].title} /*style={{backgroundImage: `url(${cards[1].img})`}} className="bg-fixed bg-center bg-blue-500"*/>
                 <div className="space-y-4 mx-auto grid grid-cols-2">
                   <div className="space-y-2">
                     <div className="text-sm font-medium lg:text-sm">

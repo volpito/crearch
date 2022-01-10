@@ -123,7 +123,7 @@ export default function Hero() {
                       </Link>
                       <Link 
                         to="#contact"
-                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-yellow-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8"
+                        className="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-yellow-400 bg-opacity-70 hover:bg-opacity-80 sm:px-8"
                       >
                         Contactez-nous
                       </Link>
@@ -136,11 +136,11 @@ export default function Hero() {
 
           <div className="relative bg-yellow-50 z-50">
             <div className="max-w-7xl mx-auto pt-16 sm:py-16 px-4 sm:px-6 lg:px-8">
-              <p className="font-BigCaslon text-center text-6xl font-extrabold uppercase text-blue-400 tracking-wide">
+              <p className="font-BigCaslon text-center text-6xl font-extrabold uppercase text-blue-500 tracking-wide">
                 CREARC'H CONSEIL
               </p>
-              <hr className='mx-auto pt-1 mt-2 w-2/12 border-1 bg-blue-400 border-blue-400'/>
-              <p className="font-BigCaslon text-center text-xs font-extrabold uppercase text-blue-400 tracking-wide mt-2">
+              <hr className='mx-auto pt-1 mt-2 w-2/12 border-1 bg-blue-500 border-blue-500'/>
+              <p className="font-BigCaslon text-center text-xs font-extrabold uppercase text-blue-500 tracking-wide mt-2">
                 Régine Dunoyer de Segonzac
               </p>
             </div>

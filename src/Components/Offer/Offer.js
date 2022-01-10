@@ -45,7 +45,7 @@ export default function Offer() {
         <div className="relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">Notre prestation </h1>
           <p className="mt-6 max-w-3xl text-xl text-gray-300">
-            Nous sommes là pour regarder, vous écouter et vous accompagner dans ce domaine si particulier
+            Nous sommes là pour regarder, écouter et vous accompagner dans ce domaine si particulier
             dont nous connaissons tous les rouages.
           </p>
         </div>
@@ -64,13 +64,13 @@ export default function Offer() {
             <div key={link.name} className="flex flex-col bg-white rounded-2xl shadow-xl">
               <div className="flex-1 relative pt-16 px-6 pb-8 md:px-8">
                 <div className="absolute top-0 p-5 inline-block bg-white rounded-xl shadow-lg transform -translate-y-1/2">
-                  <link.icon className="h-6 w-6 text-blue-300" aria-hidden="true" />
+                  <link.icon className="h-6 w-6 text-blue-400" aria-hidden="true" />
                 </div>
                 <h3 className="text-xl font-medium text-gray-900">{link.name}</h3>
                 <p className="mt-4 text-base text-gray-500">{link.description}</p>
               </div>
               <Link to={link.to} className="text-base font-medium text-gray-50 hover:text-gray-200">
-                <div className="p-6 bg-blue-400 hover:bg-blue-500 rounded-bl-2xl rounded-br-2xl md:px-8">
+                <div className="p-6 bg-blue-500 hover:bg-blue-600 rounded-bl-2xl rounded-br-2xl md:px-8">
                   {link.CTA}<span aria-hidden="true"> &rarr;</span>
                 </div>
                 </Link>
