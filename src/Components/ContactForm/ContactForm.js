@@ -16,7 +16,7 @@ export default function ContactForm() {
       <div className="relative py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
         <div className="lg:pr-8">
           <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
-            <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl text-yellow-300 uppercase tracking-wide">contact </h2>
+            <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl text-yellow-400 uppercase tracking-wide">contact </h2>
             <p className="mt-4 text-lg text-gray-500 sm:mt-6 sm:space-y-3">
             <p className="flex text-gray-500"><UserIcon className="flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-600" aria-hidden="true"/> Dunoyer de Segonzac, Régine </p>
             <p className="flex text-gray-500"><FastForwardIcon className="transform rotate-45 flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-600" aria-hidden="true"/>Région parisienne et Grand Ouest</p>
@@ -137,7 +137,7 @@ export default function ContactForm() {
               <div className="text-right sm:col-span-2">
                 <button
                   type="submit"
-                  className="inline-flex justify-center px-4 py-3 border border-transparent text-base font-medium shadow-sm rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+                  className="inline-flex justify-center px-4 py-3 border border-transparent text-base font-medium shadow-sm rounded-md text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400"
                 >
                   Envoyer
                 </button>

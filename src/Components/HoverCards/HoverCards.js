@@ -31,7 +31,7 @@ function HoverCards() {
       <div className="max-w-7xl mx-auto sm:py-16 pt-16 px-4 sm:px-6 lg:px-8">
       <h2 className="text-left text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
         <span className="block text-gray-700 sm:ml-20">Notre approche</span>
-        <span className="block text-yellow-300 sm:ml-60">pour vos projets</span>
+        <span className="block text-yellow-400 sm:ml-60">pour vos projets</span>
       </h2 >
       </div>
       <section className="text-gray-600 body-font hidden sm:block">
