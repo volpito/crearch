@@ -23,8 +23,8 @@ function Pricing() {
           <div className="pb-16 xl:flex xl:items-center xl:justify-between">
             <div>
               <h1 className="text-4xl font-extrabold sm:text-6xl sm:tracking-tight">
-                <p className="text-gray-900">Un court dialogue vaut mieux qu'un</p>
-                <p className="text-blue-500">long discours</p>
+                <p className="text-gray-700">Un court dialogue vaut mieux qu'un</p>
+                <p className="text-yellow-400">long discours</p>
               </h1>
               <p className="mt-5 text-xl text-gray-500">
               Échangeons sans détours sur votre projet !
@@ -39,7 +39,7 @@ function Pricing() {
           </div>
           <div className="border-t border-gray-200 pt-16 xl:grid xl:grid-cols-3 xl:gap-x-8">
             <div>
-              <p className="mt-2 text-3xl font-extrabold text-gray-900">Nos tarifs</p>
+              <p className="mt-2 text-3xl font-extrabold text-gray-700">Nos tarifs</p>
               <p className="mt-5 text-lg text-blue-400 max-w-xs">
                 Première analyse et proposition de devis à partir de 200€ 
               </p>
