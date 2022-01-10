@@ -98,7 +98,7 @@ export default function Hero() {
                     src={saujon}
                     alt="New home"
                   />
-                  <div className="absolute inset-0 bg-blue-100 mix-blend-multiply" />
+                  <div className="absolute inset-0 bg-blue-200 mix-blend-multiply" />
                 </div>
                 <div className="relative px-4 pb-12 pt-16 sm:px-6 sm:pt-24 lg:pt-32 lg:px-8">
                   <h1 className="text-left text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
@@ -136,13 +136,16 @@ export default function Hero() {
 
           <div className="relative bg-yellow-50 z-50">
             <div className="max-w-7xl mx-auto pt-16 sm:py-16 px-4 sm:px-6 lg:px-8">
-              <p className="text-center text-6xl font-extrabold uppercase text-blue-400 tracking-wide">
-                CREARCH' CONSEIL
+              <p className="font-BigCaslon text-center text-6xl font-extrabold uppercase text-blue-400 tracking-wide">
+                CREARC'H CONSEIL
               </p>
-              <hr className='mx-auto pt-1 mt-2 w-2/12 border-2 bg-blue-400 border-blue-400'/>
+              <hr className='mx-auto pt-1 mt-2 w-2/12 border-1 bg-blue-400 border-blue-400'/>
+              <p className="font-BigCaslon text-center text-xs font-extrabold uppercase text-blue-400 tracking-wide mt-2">
+                Régine Dunoyer de Segonzac
+              </p>
             </div>
           </div>
-          
+
         </div>
       </main>
     </div>

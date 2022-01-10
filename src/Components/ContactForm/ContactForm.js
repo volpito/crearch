@@ -1,5 +1,5 @@
 import quai from "../../Assets/Images/quai.png";
-import { PhoneIcon, MailIcon } from '@heroicons/react/outline'
+import { PhoneIcon, MailIcon, UserIcon, FastForwardIcon } from '@heroicons/react/outline'
 
 export default function ContactForm() {
   return (
@@ -16,11 +16,13 @@ export default function ContactForm() {
       <div className="relative py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:max-w-7xl lg:mx-auto lg:py-32 lg:grid lg:grid-cols-2">
         <div className="lg:pr-8">
           <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
-            <h2 className="text-4xl font-extrabold tracking-tight sm:text-4xl text-yellow-300 uppercase tracking-wide">contact </h2>
+            <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl text-yellow-300 uppercase tracking-wide">contact </h2>
             <p className="mt-4 text-lg text-gray-500 sm:mt-6 sm:space-y-3">
-            <p className="flex text-gray-500"><PhoneIcon className="flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-500" aria-hidden="true"/> 01.**.**.**.** </p>
-            <p className="flex text-gray-500"><MailIcon className="flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-500"/>crearch.conseil@wanadoo.fr</p>
-            <p>ou via le formulaire suivant, et nous prendrons rapidement contact avec vous !</p>
+            <p className="flex text-gray-500"><UserIcon className="flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-500" aria-hidden="true"/> Dunoyer de Segonzac, Régine </p>
+            <p className="flex text-gray-500"><FastForwardIcon className="transform rotate-45 flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-500" aria-hidden="true"/>Région parisienne et Grand Ouest</p>
+            <p className="flex text-gray-500"><PhoneIcon className="flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-500" aria-hidden="true"/> 01.40.71.02.66 </p>
+            <p className="flex text-gray-500"><MailIcon className="flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-500"/>crearch.conseil@gmail.com</p>
+            <p>ou <i>via</i> le formulaire suivant :</p>
             </p>
             <form action="#" method="POST" className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
               <div>
@@ -135,7 +137,7 @@ export default function ContactForm() {
               <div className="text-right sm:col-span-2">
                 <button
                   type="submit"
-                  className="inline-flex justify-center px-4 py-3 border border-transparent text-base font-medium shadow-sm rounded-md text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+                  className="inline-flex justify-center px-4 py-3 border border-transparent text-base font-medium shadow-sm rounded-md text-white bg-blue-400 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
                 >
                   Envoyer
                 </button>

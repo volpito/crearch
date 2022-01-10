@@ -8,7 +8,7 @@ function HoverCards() {
   const cards = [
     { subtitle: 'Votre projet', 
       title: 'Appartement',
-      content: "Dans le cadre d'un projet de location, ou pour vous y installer durablement, l'acquisition d'un appartement et son aménagement répond à des problématiques bien spécifiques",
+      content: "Dans le cadre d'un projet de location, ou pour vous y installer durablement, l'acquisition d'un appartement et son aménagement répond à des problématiques bien spécifiques.",
       img: flat,
       className:"mr-12"
     },
@@ -40,7 +40,7 @@ function HoverCards() {
             <div key={item.title} className={item.className}>
                 <div className="flex relative ">
                   <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center rounded-xl" src={item.img}/>
-                  <div className="px-8 py-10 relative z-10 w-full border-4 border-yellow-200 bg-white opacity-0 hover:opacity-100 rounded-xl">
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-blue-300 bg-yellow-50 opacity-0 hover:opacity-100 rounded-xl">
                     <h2 className="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">{item.subtitle}</h2>
                     <h1 className="title-font text-2xl font-medium text-gray-800 mb-3">{item.title}</h1>
                     <p className="leading-relaxed">{item.content}</p>
