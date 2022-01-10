@@ -9,7 +9,7 @@ const supportLinks = [
     description:
       'Tous les aspects de votre projet seront analysés en détail, afin de vous éviter les déconvenues une fois l’affaire engagée.',
     icon: NewspaperIcon,
-    CTA: 'Prendrez rendez-vous'
+    CTA: 'Prendre rendez-vous'
   },
   {
     name: 'Dialogue',
