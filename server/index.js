@@ -39,7 +39,7 @@ app.post('/send', (req, res) => {
       } else {
         res.send({
           success: true,
-          message: 'Votre message a bien été envoyé, nous vous recontacterons au plus vite.'
+          message: 'Votre message a bien été envoyé, nous vous recontacterons dans les plus brefs délais'
         });
       }
     });
