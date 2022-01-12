@@ -1,7 +1,50 @@
 import quai from "../../Assets/Images/quai.png";
 import { PhoneIcon, MailIcon, UserIcon, FastForwardIcon } from '@heroicons/react/outline'
+import { useState } from "react";
+import axios from 'axios';
 
 export default function ContactForm() {
+
+  const [result, setResult] = useState(null);
+  const [state, setState] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    company: '',
+    phone: '',
+    ask: '',
+    knowHow: ''
+  });
+
+  const sendEmail = event => {
+    event.preventDefault();
+    axios
+     .post('/send', { ...state })
+     .then(response => {
+       setResult(response.data);
+       setState({ firstName: '',
+       lastName: '',
+       email: '',
+       company: '',
+       phone: '',
+       ask: '',
+       knowHow: ''
+      });
+     })
+     .catch(() => {
+       setResult({ success: false, message: 'Something went wrong. Try again later'});
+   });
+  }   
+
+  const onInputChange = event => {
+    const { name, value } = event.target;
+
+    setState({
+      ...state,
+      [name]: value
+    });
+  };
+
   return (
     <div className="relative bg-blue-50 rounded-t-full" id="contact">
       <div className="lg:absolute lg:inset-0">
@@ -24,38 +67,42 @@ export default function ContactForm() {
             <p className="flex text-gray-500"><MailIcon className="flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-600"/>crearch.conseil@gmail.com</p>
             <p>ou <i>via</i> le formulaire suivant :</p>
             </p>
-            <form action="#" method="POST" className="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+            <form onSubmit={sendEmail} className="mt-9 mb-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
               <div>
-                <label htmlFor="first-name" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="firstName" className="block text-sm font-medium text-gray-700">
                   Prénom
                 </label>
                 <div className="mt-1">
                   <input
                     type="text"
-                    name="first-name"
-                    id="first-name"
+                    name="firstName"
+                    id="firstName"
                     autoComplete="given-name"
                     className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                    value={state.firstName}
+                    onChange={onInputChange}
                   />
                 </div>
               </div>
               <div>
-                <label htmlFor="last-name" className="block text-sm font-medium text-gray-700">
-                  Nom
+                <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">
+                  nom
                 </label>
                 <div className="mt-1">
                   <input
                     type="text"
-                    name="last-name"
-                    id="last-name"
+                    name="lastName"
+                    id="lastName"
                     autoComplete="family-name"
                     className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                    value={state.lastName}
+                    onChange={onInputChange}
                   />
                 </div>
               </div>
               <div className="sm:col-span-2">
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  Email
+                  email
                 </label>
                 <div className="mt-1">
                   <input
@@ -64,6 +111,8 @@ export default function ContactForm() {
                     type="email"
                     autoComplete="email"
                     className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                    value={state.email}
+                    onChange={onInputChange}
                   />
                 </div>
               </div>
@@ -76,8 +125,10 @@ export default function ContactForm() {
                     type="text"
                     name="company"
                     id="company"
-                    autoComplete="organization"
+                    autoComplete="company"
                     className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                    value={state.company}
+                    onChange={onInputChange}
                   />
                 </div>
               </div>
@@ -95,9 +146,11 @@ export default function ContactForm() {
                     type="text"
                     name="phone"
                     id="phone"
-                    autoComplete="tel"
+                    autoComplete="phone"
                     aria-describedby="phone-description"
                     className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                    value={state.phone}
+                    onChange={onInputChange}
                   />
                 </div>
               </div>
@@ -106,31 +159,35 @@ export default function ContactForm() {
                   <label htmlFor="how-can-we-help" className="block text-sm font-medium text-gray-700">
                     Quelle est votre demande ?
                   </label>
-                  <span id="how-can-we-help-description" className="text-sm text-gray-500">
+                  <span id="ask" className="text-sm text-gray-500">
                     Max. 500 caractères
                   </span>
                 </div>
                 <div className="mt-1">
                   <textarea
-                    id="how-can-we-help"
-                    name="how-can-we-help"
-                    aria-describedby="how-can-we-help-description"
+                    id="ask"
+                    name="ask"
+                    aria-describedby="how-can-we-help-you"
                     rows={4}
                     className="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
                     defaultValue={''}
+                    value={state.ask}
+                    onChange={onInputChange}
                   />
                 </div>
               </div>
               <div className="sm:col-span-2">
-                <label htmlFor="how-did-you-hear-about-us" className="block text-sm font-medium text-gray-700">
+                <label htmlFor="knowHow" className="block text-sm font-medium text-gray-700">
                   Comment nous avez-vous connus ?
                 </label>
                 <div className="mt-1">
                   <input
                     type="text"
-                    name="how-did-you-hear-about-us"
-                    id="how-did-you-hear-about-us"
+                    name="knowHow"
+                    id="knowHow"
                     className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
+                    value={state.knowHow}
+                    onChange={onInputChange}
                   />
                 </div>
               </div>
@@ -143,6 +200,11 @@ export default function ContactForm() {
                 </button>
               </div>
             </form>
+            {result && (
+              <p className={`${result.success ? 'success' : 'error'}`}>
+              {result.message}
+              </p>
+            )}
           </div>
         </div>
       </div>
