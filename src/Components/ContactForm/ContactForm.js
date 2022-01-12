@@ -32,7 +32,7 @@ export default function ContactForm() {
       });
      })
      .catch(() => {
-       setResult({ success: false, message: 'Something went wrong. Try again later'});
+       setResult({ success: false, message: "Une erreur s'est produite, merci de réessayer plus tard"});
    });
   }   
 
