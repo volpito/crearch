@@ -44,7 +44,7 @@ export default function ContactForm() {
       [name]: value
     });
   };
-console.log(process.env.password)
+
   return (
     <div className="relative bg-blue-50 rounded-t-full" id="contact">
       <div className="lg:absolute lg:inset-0">
