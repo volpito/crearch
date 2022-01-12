@@ -45,7 +45,7 @@ function Pricing() {
               </p>
             </div>
             <div className="mt-4 sm:mt-8 md:mt-10 md:grid md:grid-cols-2 md:gap-x-8 xl:mt-0 xl:col-span-2">
-              <ul role="list" className="divide-y divide-gray-200">
+              <ul className="divide-y divide-gray-200">
                 {features.slice(0, 3).map((feature, featureIdx) => (
                   <li key={feature} className={classNames(featureIdx === 0 ? 'md:py-0 md:pb-4' : '', 'py-4 flex')}>
                     <CheckIcon className="flex-shrink-0 h-6 w-6 text-green-500" aria-hidden="true" />
@@ -53,7 +53,7 @@ function Pricing() {
                   </li>
                 ))}
               </ul>
-              <ul role="list" className="border-t border-gray-200 divide-y divide-gray-200 md:border-t-0">
+              <ul className="border-t border-gray-200 divide-y divide-gray-200 md:border-t-0">
                 {features.slice(3).map((feature, featureIdx) => (
                   <li
                     key={feature}
