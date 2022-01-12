@@ -2,6 +2,7 @@ const path = require('path');
 const express = require('express');
 const transporter = require('./config');
 const dotenv = require('dotenv');
+const port = process.env.PORT || 3000;
 
 dotenv.config();
 const app = express();
@@ -51,6 +52,6 @@ app.post('/send', (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log('server start on port 3000');
+app.listen(port, () => {
+  console.log(`server start on port ${port}`);
 });
