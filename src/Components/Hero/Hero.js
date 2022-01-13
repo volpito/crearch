@@ -136,11 +136,11 @@ export default function Hero() {
 
           <div className="relative bg-yellow-50 z-50">
             <div className="max-w-7xl mx-auto pt-16 sm:py-16 px-4 sm:px-6 lg:px-8">
-              <p className="font-BigCaslon text-center text-6xl font-extrabold uppercase text-blue-700 tracking-wide">
+              <p className="font-BigCaslon text-center text-6xl font-extrabold uppercase text-blue-600 opacity-95 tracking-wide">
                 CREARC<span className='text-yellow-400'>'</span>H CONSEIL
               </p>
-              <hr className='mx-auto pt-1 mt-2 w-2/12 border-1 bg-blue-700 border-blue-700'/>
-              <p className="font-BigCaslon text-center text-xs font-extrabold uppercase text-yellow-400 tracking-wide mt-2">
+              <hr className='mx-auto pt-1 mt-2 w-2/12 border-1 bg-blue-600 border-blue-600'/>
+              <p className="font-BigCaslon text-center text-sm font-extrabold uppercase text-yellow-400 tracking-wide mt-2">
                 Régine Dunoyer de Segonzac
               </p>
             </div>

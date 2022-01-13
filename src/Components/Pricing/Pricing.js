@@ -32,7 +32,7 @@ function Pricing() {
             </div>
             <Link 
               to="#contact"
-              className="mt-8 w-full bg-blue-700 border border-transparent rounded-md py-3 px-5 inline-flex items-center justify-center text-base font-medium text-white hover:bg-blue-800 sm:mt-10 sm:w-auto xl:mt-0"
+              className="mt-8 w-full bg-blue-600 border border-transparent rounded-md py-3 px-5 inline-flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 sm:mt-10 sm:w-auto xl:mt-0"
             >
               Contactez-nous !
             </Link>

@@ -61,10 +61,10 @@ export default function ContactForm() {
           <div className="max-w-md mx-auto sm:max-w-lg lg:mx-0">
             <h2 className="text-4xl font-extrabold tracking-tight sm:text-5xl text-yellow-400 uppercase tracking-wide">contact </h2>
             <p className="mt-4 text-lg text-gray-500 sm:mt-6 sm:space-y-3">
-            <p className="flex text-gray-500"><UserIcon className="flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-800" aria-hidden="true"/> Dunoyer de Segonzac, Régine </p>
-            <p className="flex text-gray-500"><FastForwardIcon className="transform rotate-45 flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-800" aria-hidden="true"/>Région parisienne et Grand Ouest</p>
-            <p className="flex text-gray-500"><PhoneIcon className="flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-800" aria-hidden="true"/> 01.40.71.02.66 </p>
-            <p className="flex text-gray-500"><MailIcon className="flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-800"/>crearch.conseil@gmail.com</p>
+            <p className="flex text-gray-500"><UserIcon className="flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-700" aria-hidden="true"/> Dunoyer de Segonzac, Régine </p>
+            <p className="flex text-gray-500"><FastForwardIcon className="transform rotate-45 flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-700" aria-hidden="true"/>Région parisienne et Grand Ouest</p>
+            <p className="flex text-gray-500"><PhoneIcon className="flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-700" aria-hidden="true"/> 01.40.71.02.66 </p>
+            <p className="flex text-gray-500"><MailIcon className="flex-shrink-0 h-6 w-6 text-gray-500 mr-2 hover:text-blue-700"/>crearch.conseil@gmail.com</p>
             <p>ou <i>via</i> le formulaire suivant :</p>
             </p>
             <form onSubmit={sendEmail} className="mt-9 mb-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
@@ -194,7 +194,7 @@ export default function ContactForm() {
               <div className="text-right sm:col-span-2">
                 <button
                   type="submit"
-                  className="inline-flex justify-center px-4 py-3 border border-transparent text-base font-medium shadow-sm rounded-md text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400"
+                  className="inline-flex justify-center px-4 py-3 border border-transparent text-base font-medium shadow-sm rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-400"
                 >
                   Envoyer
                 </button>

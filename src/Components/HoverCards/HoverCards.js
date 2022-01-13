@@ -41,7 +41,7 @@ function HoverCards() {
                 <div className="flex relative ">
                   <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center rounded-xl" src={item.img}/>
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-blue-500 bg-yellow-50 opacity-0 hover:opacity-100 rounded-xl">
-                    <h2 className="tracking-widest text-sm title-font font-medium text-blue-700 mb-1">{item.subtitle}</h2>
+                    <h2 className="tracking-widest text-sm title-font font-medium text-blue-600 mb-1">{item.subtitle}</h2>
                     <h1 className="title-font text-2xl font-medium text-gray-800 mb-3">{item.title}</h1>
                     <p className="leading-relaxed">{item.content}</p>
                   </div>
@@ -70,7 +70,7 @@ function HoverCards() {
                       </div>
                     </div>
                   </li>
-                <li key={cards[1].title} /*style={{backgroundImage: `url(${cards[1].img})`}} className="bg-fixed bg-center bg-blue-700"*/>
+                <li key={cards[1].title} /*style={{backgroundImage: `url(${cards[1].img})`}} className="bg-fixed bg-center bg-blue-600"*/>
                 <div className="space-y-4 mx-auto grid grid-cols-2">
                   <div className="space-y-2">
                     <div className="text-sm font-medium lg:text-sm">
