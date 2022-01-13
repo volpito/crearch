@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const transporter = require('./config');
 const dotenv = require('dotenv');
-const port = process.env.PORT || 'https://crearch.herokuapp.com/';
+const port = process.env.PORT || 3000;
 
 dotenv.config();
 const app = express();
