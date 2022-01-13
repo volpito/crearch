@@ -70,7 +70,7 @@ export default function Offer() {
                 <p className="mt-4 text-base text-gray-500">{link.description}</p>
               </div>
               <Link to={link.to} className="text-base font-medium text-gray-50 hover:text-gray-200">
-                <div className="p-6 bg-blue-500 hover:bg-blue-600 rounded-bl-2xl rounded-br-2xl md:px-8">
+                <div className="p-6 bg-blue-700 hover:bg-blue-800 rounded-bl-2xl rounded-br-2xl md:px-8">
                   {link.CTA}<span aria-hidden="true"> &rarr;</span>
                 </div>
                 </Link>
