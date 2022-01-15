@@ -32,7 +32,7 @@ function Pricing() {
             </div>
             <Link 
               to="#contact"
-              className="mt-8 w-full bg-blue-500 border border-transparent rounded-md py-3 px-5 inline-flex items-center justify-center text-base font-medium text-white hover:bg-blue-600 sm:mt-10 sm:w-auto xl:mt-0"
+              className="mt-8 w-full bg-blue-600 border border-transparent rounded-md py-3 px-5 inline-flex items-center justify-center text-base font-medium text-white hover:bg-blue-700 sm:mt-10 sm:w-auto xl:mt-0"
             >
               Contactez-nous !
             </Link>
@@ -40,12 +40,12 @@ function Pricing() {
           <div className="border-t border-gray-200 pt-16 xl:grid xl:grid-cols-3 xl:gap-x-8">
             <div>
               <p className="mt-2 text-3xl font-extrabold text-gray-700">Nos tarifs</p>
-              <p className="mt-5 text-lg text-blue-400 max-w-xs">
+              <p className="mt-5 text-lg text-blue-500 max-w-xs">
                 Première analyse et proposition de devis à partir de 200€ 
               </p>
             </div>
             <div className="mt-4 sm:mt-8 md:mt-10 md:grid md:grid-cols-2 md:gap-x-8 xl:mt-0 xl:col-span-2">
-              <ul role="list" className="divide-y divide-gray-200">
+              <ul className="divide-y divide-gray-200">
                 {features.slice(0, 3).map((feature, featureIdx) => (
                   <li key={feature} className={classNames(featureIdx === 0 ? 'md:py-0 md:pb-4' : '', 'py-4 flex')}>
                     <CheckIcon className="flex-shrink-0 h-6 w-6 text-green-500" aria-hidden="true" />
@@ -53,7 +53,7 @@ function Pricing() {
                   </li>
                 ))}
               </ul>
-              <ul role="list" className="border-t border-gray-200 divide-y divide-gray-200 md:border-t-0">
+              <ul className="border-t border-gray-200 divide-y divide-gray-200 md:border-t-0">
                 {features.slice(3).map((feature, featureIdx) => (
                   <li
                     key={feature}
