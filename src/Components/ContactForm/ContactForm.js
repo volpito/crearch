@@ -86,7 +86,7 @@ export default function ContactForm() {
               </div>
               <div>
                 <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">
-                  nom
+                  Nom
                 </label>
                 <div className="mt-1">
                   <input
@@ -102,7 +102,7 @@ export default function ContactForm() {
               </div>
               <div className="sm:col-span-2">
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  email
+                  Email
                 </label>
                 <div className="mt-1">
                   <input
@@ -137,9 +137,6 @@ export default function ContactForm() {
                   <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
                     Téléphone
                   </label>
-                  <span id="phone-description" className="text-sm text-gray-500">
-                    Optionnel
-                  </span>
                 </div>
                 <div className="mt-1">
                   <input
