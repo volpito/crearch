@@ -201,7 +201,7 @@ export default function ContactForm() {
               </div>
             </form>
             {result && (
-              <p className={`${result.success ? 'success' : 'error'}`}>
+              <p className={`${result.success ? 'success bg-green-100' : 'error bg-red-100'} border rounded-lg border-gray-400 px-4 py-1 text-center text-gray-700`}>
               {result.message}
               </p>
             )}
