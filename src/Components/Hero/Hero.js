@@ -139,7 +139,6 @@ export default function Hero() {
               <img className='mx-auto w-11/12 mt-12 lg:mt-0 lg:w-3/12 ' src={crearch} alt="Logo de la société d'aritecte Crearch, spécialisée dans l'estimation de biens immobiliers" />
             </div>
           </div>
-
         </div>
       </main>
     </div>
