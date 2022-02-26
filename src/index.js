@@ -10,6 +10,7 @@ import Offer from './Components/Offer/Offer';
 import ContactForm from './Components/ContactForm/ContactForm';
 import BtnReturn from './Components/BtnReturn/BtnReturn';
 import Pricing from './Components/Pricing/Pricing';
+import HttpsRedirect from 'react-https-redirect';
 
 function App() {
   return (
@@ -26,12 +27,14 @@ function App() {
 }
 
 ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>,
+  <HttpsRedirect>
+    <React.StrictMode>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />} />
+        </Routes>
+      </BrowserRouter>
+    </React.StrictMode>
+  </HttpsRedirect>,
   document.getElementById('root')
 );
