@@ -52,7 +52,7 @@ export default function ContactForm() {
           <img
             className="h-56 w-full object-contain object-center lg:absolute lg:h-full lg:block hidden"
             src={quai}
-            alt="computer-drawn plan"
+            alt="Plan réalisé par une architecte permettant d'estimer les travaux à effectuer sur le bien immobilier"
           />
         </div>
       </div>

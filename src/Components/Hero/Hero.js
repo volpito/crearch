@@ -6,7 +6,7 @@ import {
 } from '@heroicons/react/outline'
 import { HashLink as Link } from 'react-router-hash-link';
 
-import crearch from "../../Assets/Images/crearch.png";
+import crearch from "../../Assets/Images/logo_crearch.png";
 import saujon from "../../Assets/Images/saujon1.jpg";
 
 const navigation = [
@@ -96,7 +96,7 @@ export default function Hero() {
                   <img
                     className="h-full w-full object-cover"
                     src={saujon}
-                    alt="New home"
+                    alt="Locaux professionnels réalisés par notre architecte après expertise immobilière"
                   />
                   <div className="absolute inset-0 bg-blue-200 mix-blend-multiply" />
                 </div>
@@ -135,14 +135,8 @@ export default function Hero() {
           </div>
 
           <div className="relative bg-yellow-50 z-50">
-            <div className="max-w-7xl mx-auto pt-16 sm:py-16 px-4 sm:px-6 lg:px-8">
-              <p className="font-BigCaslon text-center text-6xl font-extrabold uppercase text-blue-600 opacity-95 tracking-wide">
-                CREARC<span className='text-yellow-400'>'</span>H CONSEIL
-              </p>
-              <hr className='mx-auto pt-1 mt-2 w-2/12 border-1 bg-blue-600 border-blue-600'/>
-              <p className="font-BigCaslon text-center text-sm font-extrabold uppercase text-yellow-400 tracking-wide mt-2">
-                Régine Dunoyer de Segonzac
-              </p>
+            <div className="max-w-7xl mx-auto pt-12 transform -rotate-3">
+              <img className='mx-auto w-11/12 mt-12 lg:mt-0 lg:w-3/12 ' src={crearch} alt="Logo de la société d'aritecte Crearch, spécialisée dans l'estimation de biens immobiliers" />
             </div>
           </div>
 

@@ -39,7 +39,7 @@ function HoverCards() {
           {cards.map((item) => (
             <div key={item.title} className={item.className}>
                 <div className="flex relative ">
-                  <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center rounded-xl" src={item.img}/>
+                  <img alt="Sélection d'images destinées à illustrer la variété de projets immobiliers que notre architecte pourra prendre" className="absolute inset-0 w-full h-full object-cover object-center rounded-xl" src={item.img}/>
                   <div className="px-8 py-10 relative z-10 w-full border-4 border-blue-500 bg-yellow-50 opacity-0 hover:opacity-100 rounded-xl">
                     <h2 className="tracking-widest text-sm title-font font-medium text-blue-600 mb-1">{item.subtitle}</h2>
                     <h1 className="title-font text-2xl font-medium text-gray-800 mb-3">{item.title}</h1>
@@ -61,7 +61,7 @@ function HoverCards() {
             >
                 <li key={cards[0].title}>
                   <div className="space-y-2 mx-auto grid grid-cols-2">
-                      <img className={`rounded-3xl mt-7 mx-auto h-44 object-cover shadow-2xl`} src={cards[0].img} alt={cards[0].title} />
+                      <img className={`rounded-3xl mt-7 mx-auto h-44 object-cover shadow-2xl`} src={cards[0].img} alt="Appartement ouvert et clair rénové par notre architecte" />
                       <div className="space-y-2">
                         <div className="text-sm font-medium lg:text-sm">
                           <h3 className="text-blue-600 mb-2 text-lg">{cards[0].title}</h3>
@@ -79,13 +79,13 @@ function HoverCards() {
                     </div>
                   </div>
                   <div>
-                  <img className={`rounded-3xl mx-auto h-44 object-cover shadow-xl mt-7`} src={cards[1].img} alt={cards[1].title} />
+                  <img className={`rounded-3xl mx-auto h-44 object-cover shadow-xl mt-7`} src={cards[1].img} alt="Bureaux modernes en open-space fruit de l'expertise de notre architecte" />
                   </div>
                 </div>
               </li>
               <li key={cards[2].title}>
                 <div className="space-y-4 mx-auto grid grid-cols-2">
-                  <img className={`rounded-3xl bg-gray-200 mx-auto h-44 object-cover shadow-2xl mt-7`} src={cards[2].img} alt={cards[2].title} />
+                  <img className={`rounded-3xl bg-gray-200 mx-auto h-44 object-cover shadow-2xl mt-7`} src={cards[2].img} alt="Cuisine américaine d'une maison baignée de soleil rénovée par notre architecte" />
                   <div className="space-y-2">
                     <div className="text-sm font-medium lg:text-sm">
                       <h3 className="text-blue-600 mb-2 text-lg">{cards[2].title}</h3>
